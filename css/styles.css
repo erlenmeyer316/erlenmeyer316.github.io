@@ -22,6 +22,10 @@ body {
   background-image: url(../assets/emoji/live-long-and-prosper.png);
 }
 
+.emoji-communicator {
+  background-image: url(../assets/emoji/communicator.svg);
+}
+
 /*INTRO HEADER STYLES*/
 .header {
   padding: 0px 100px;
@@ -29,8 +33,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 1440px;
-  margin: 0 auto;
+  background-color: #286da8;
+  color: #ffffff;
+}
+
+.header a {
+  color: #cd5360;
 }
 
 .header__greetings {
@@ -55,6 +63,12 @@ body {
 .header__contact {
   font-size: 1.25rem;
   font-weight: 400;
+}
+
+.header__contact .emoji {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
 }
 
 .header__scroll {
