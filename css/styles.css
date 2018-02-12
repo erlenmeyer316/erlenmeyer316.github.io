@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 
 /*GLOBAL STYLES*/
 body {
@@ -83,12 +84,7 @@ p {
   display: none;
 }
 
-section.background,
-section.skills,
-section.technical-summary,
-section.experience,
-section.featured-projects,
-section.other-projects {
+section {
   display: flex;
   padding: 24px 50px;
   flex-direction: column;
@@ -108,14 +104,19 @@ section.other-projects {
   font-weight: 300;
   font-size: 1rem;
   width: 100%;
-  margin-left: 24px;
+}
+
+section.skills .section__content {
+  margin-left: 1rem;
+}
+section.skills .section__content ul{
+  list-style-type: circle;
 }
 
 .tehnical-list {
   display: flex;
   flex-wrap: wrap;
 }
-
 
 .technical-list__category {
   width: 50%;
@@ -129,6 +130,24 @@ section.other-projects {
   font-weight:700;
 }
 
+.jobs {}
+.job {
+  margin-bottom: 24px;
+}
+.job__employer {
+  font-weight: 700;
+}
+.job__dates {
+  font-weight: 300;
+  font-size: .8rem;
+  font-family: 'Inconsolata', sans-serif;
+}
+.job__position {}
+
+section.featured-projects,
+section.other-projects {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .emoji {
