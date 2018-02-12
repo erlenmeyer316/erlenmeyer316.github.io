@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
 
 /*GLOBAL STYLES*/
 body {
@@ -7,6 +7,11 @@ body {
     background-color: #fff;
     line-height: 1.5;
     font-size: 12px;
+    font-weight: 300;
+}
+
+p {
+  margin-bottom: 24px;
 }
 
 .color-trek-red {color: #df0000;}
@@ -23,6 +28,10 @@ body {
 .bgcolor-trek-dark-grey {background-color: #4d4b4b;}
 .color-black {color: #000000;}
 .color-white {color: #ffffff;}
+
+.bold {
+  font-weight: 700;
+}
 
 .emoji {
   display: inline-block;
@@ -44,7 +53,7 @@ body {
 
 .header {
   padding: 0px 50px;
-  height: 100vh; /*TO DO: height: 90vh when there is more content*/
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -70,10 +79,56 @@ body {
   font-size: 1rem;
 }
 
-
 .header__scroll {
   display: none;
 }
+
+section.background,
+section.skills,
+section.technical-summary,
+section.experience,
+section.featured-projects,
+section.other-projects {
+  display: flex;
+  padding: 24px 50px;
+  flex-direction: column;
+}
+
+.section__title {
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section__content {
+  display: block;
+  font-weight: 300;
+  font-size: 1rem;
+  width: 100%;
+  margin-left: 24px;
+}
+
+.tehnical-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.technical-list__category {
+  width: 50%;
+}
+
+.technical-list__category ul {
+  margin-bottom: 1rem;
+}
+
+.technical-list__category__label{
+  font-weight:700;
+}
+
 
 @media (min-width: 768px) {
   .emoji {
@@ -102,7 +157,7 @@ body {
   }
 
   .header__scroll {
-    display: none; /*TO DO: dislay: block when there is more content*/
+    display: block;
     padding-bottom: 24px;
   }
 
