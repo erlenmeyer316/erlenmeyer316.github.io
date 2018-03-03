@@ -54,7 +54,7 @@ p {
 
 .header {
   padding: 0px 50px;
-  height: 100vh;
+  height: 97vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -82,7 +82,7 @@ p {
 }
 
 .header__scroll {
-  display: block;
+  display: none;
   padding-bottom: 24px;
 }
 
@@ -184,6 +184,11 @@ section.skills .section__content ul{
   font-weight:700;
 }
 
+.technical-list__category-item {
+  margin: 3px 0;
+  font-size: .9rem;
+}
+
 .jobs {}
 .job {
   margin-bottom: 24px;
@@ -221,7 +226,7 @@ section.skills .section__content ul{
 
 section.featured-projects,
 section.other-projects {
-  display: none;
+  display: block;
 }
 
 @media (min-width: 768px) {
