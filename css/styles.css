@@ -15,6 +15,10 @@ p {
   margin-bottom: 24px;
 }
 
+h3 {
+  font-weight: 700;
+}
+
 .color-trek-red {color: #df0000;}
 .bgcolor-trek-red {background-color:  #df0000;text-align: center;/* margin-top: -14%; *//* position: relative; */display: none;}
 .color-trek-gold {color: #f2c300;}
@@ -59,6 +63,18 @@ p {
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
+  background:
+    linear-gradient(
+       rgba(0, 153, 246, .75),
+       rgba(0, 153, 246, .75)
+     ),
+    url('../assets/backgrounds/cheap_diagonal_fabric.png');
+  background-repeat: repeat;
+}
+
+.header-tint {
+  background-color: rgba(0, 153, 246, 1); // Tint color
+  background-blend-mode: multiply;
 }
 
 .header__greetings {
@@ -211,7 +227,8 @@ section.skills .section__content ul{
   margin-top: 1rem;
 }
 
-.resume-link::after {
+.resume-link::after,
+.project-link::after {
   position: relative;
   bottom: 2px;
   margin-left: 15px;
@@ -224,10 +241,25 @@ section.skills .section__content ul{
   vertical-align: middle;
 }
 
-section.featured-projects,
-section.other-projects {
-  display: block;
+section.featured-projects{
+
 }
+
+section.other-projects {
+
+}
+
+.other-projects .project .project-link {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+  margin-top: 1rem;
+}
+
+.footer {}
+
+
 
 @media (min-width: 768px) {
   .emoji {
